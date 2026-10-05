@@ -21,3 +21,19 @@ def somar(numero1, numero2):
     print(f"resultado: {resultado}")
 
 somar(2, 2)
+
+
+
+def cadastrar_produto():
+    nome = input("digite o nome do produto: ")
+    preco = float(input("digite o preco do produto: "))
+    return nome, preco
+
+def exibir_produto(nome, preco):
+    print("\n==== PRODUTO =====")
+    print(f"nome: {nome}")
+    print(f"preco: R$ {preco:.2f}")
+
+
+nome, preco = cadastrar_produto()
+exibir_produto(nome, preco)
